@@ -1,16 +1,16 @@
 import PropTypes from 'prop-types';
 
-function StatisticList({items}) {
+function StatisticList({stats}) {
     return (
         <ul className="stat-list">
             
-            {items.map(item => (
+            {stats.map(stat=> (
 
-            <li className="item" key={item.id}>
+            <li className="item" key={stat.id}>
                 
-                <span className="label">{item.label}</span>
+                <span className="label">{stat.label}</span>
                 
-                <span className="percentage">{item.percentage}</span>
+                <span className="percentage">{stat.percentage}</span>
                 
             </li>
             ))
@@ -21,9 +21,11 @@ function StatisticList({items}) {
 }
 
 StatisticList.protoType = {
-    items: PropTypes.arrayOf(
+    stats: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.string.isRequired,
+        id: PropTypes.string.isRequired,
+        label: PropTypes.string.isRequired,
+        percentage: PropTypes.string.isRequired,
     }),
   ),
 }

@@ -18,9 +18,9 @@ function StatsUser({ followers, views, likes }) {
 }
 
 StatsUser.propTypes = {
-    followers: PropTypes.number,
-    views: PropTypes.number,
-    likes: PropTypes.number,
+    followers: PropTypes.number.isRequired,
+    views: PropTypes.number.isRequired,
+    likes: PropTypes.number.isRequired,
 
 }
 

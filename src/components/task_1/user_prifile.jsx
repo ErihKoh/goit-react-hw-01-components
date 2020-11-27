@@ -20,10 +20,10 @@ return (<div className="profile">
 
 
 Profile.propTypes = {
-  avatar: PropTypes.string,
-  name: PropTypes.string,
-  tag: PropTypes.string,
-  location: PropTypes.string,
+  avatar: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
 };
 
 export default Profile;

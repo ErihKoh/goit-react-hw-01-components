@@ -2,11 +2,13 @@ import './App.css';
 import user from './components/task_1/user.json';
 import statisticalData from './components/task_2/statistical-data.json';
 import friends from './components/task_3/friends.json';
+import transaction from './components/task_4/transaction.json';
 import Profile from './components/task_1/user_prifile';
 import StatsUser from './components/task_1/user_stats';
 import Statistics from './components/task_2/Statistics';
 import StatisticList from './components/task_2/StatisticList';
 import FriendList from './components/task_3/FriendList ';
+import TransactionHistory from './components/task_4/TransactionHistory';
 
 function App() {
   return (
@@ -30,7 +32,9 @@ function App() {
         <StatisticList stats={statisticalData}/> 
       </Statistics>
       
-      <FriendList friends={friends}/>
+      <FriendList friends={friends} />
+      
+      <TransactionHistory items={transaction}/>
    </div>
     
   );

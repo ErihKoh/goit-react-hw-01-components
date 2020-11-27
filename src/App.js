@@ -1,24 +1,33 @@
 import './App.css';
-import user from './components/user.json';
-import Profile from './components/user_prifile';
-import StatsUser from './components/user_stats';
+import user from './components/task_1/user.json';
+import statisticalData from './components/task_2/statistical-data.json';
+import Profile from './components/task_1/user_prifile';
+import StatsUser from './components/task_1/user_stats';
+import Statistics from './components/task_2/Statistics';
+import StatisticList from './components/task_2/StatisticList';
 
 function App() {
   return (
-   <Profile
-  name={user.name}
-  tag={user.tag}
-  location={user.location}
-  avatar={user.avatar}
-  stats={user.stats}
+    <div> 
+      <Profile
+        name={user.name}
+        tag={user.tag}
+        location={user.location}
+        avatar={user.avatar}
+        stats={user.stats}
     >
-      <StatsUser
-        followers={user.stats.followers}
-        views={user.stats.views}
-        likes={user.stats.likes}
-      /> 
+        <StatsUser
+          followers={user.stats.followers}
+          views={user.stats.views}
+          likes={user.stats.likes}
+        /> 
       
-    </Profile>
+     </Profile>
+
+    <Statistics title="Upload stats" >
+        <StatisticList items={statisticalData}/> 
+    </Statistics>
+   </div>
     
   );
 }

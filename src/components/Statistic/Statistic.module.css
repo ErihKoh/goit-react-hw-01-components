@@ -1,0 +1,49 @@
+.statistics {
+  margin: 40px auto;
+  padding-top: 30px;
+  max-width: 399px;
+  border: 1px solid #dcdcdc;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.33;
+  color: #696969;
+}
+
+.statisticList {
+  display: flex;
+  justify-content: space-around;
+  /* border-top: 1px solid #000; */
+}
+
+.item {
+  padding: 15px;
+  width: 50px;
+}
+
+.item:nth-child(1) {
+  background-color: #00bfff;
+}
+
+.item:nth-child(2) {
+  background-color: #9400d3;
+}
+
+.item:nth-child(3) {
+  background-color: #ff0000;
+}
+
+.item:nth-child(4) {
+  background-color: #00ffff;
+}
+
+.item:nth-child(5) {
+  background-color: #00ff00;
+}

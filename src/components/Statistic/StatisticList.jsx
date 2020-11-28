@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types';
+import s from './Statistic.module.css';
 
 function StatisticList({ stats }) {
   return (
-    <ul className="stat-list">
+    <ul className={s.statisticList}>
       {stats.map(stat => (
-        <li className="item" key={stat.id}>
+        <li className={s.item} key={stat.id}>
           <span className="label">{stat.label}</span>
 
           <span className="percentage">{stat.percentage}</span>

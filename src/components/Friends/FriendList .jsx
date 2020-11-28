@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import Friend from './friend';
+import Friend from './Friend';
 
 function FriendList({ friends }) {
   return (
@@ -20,7 +20,7 @@ function FriendList({ friends }) {
 FriendList.propTypes = {
   friends: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.string.isRequired,
+      id: PropTypes.number.isRequired,
     }),
   ),
 };

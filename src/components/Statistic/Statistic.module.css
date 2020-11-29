@@ -1,7 +1,7 @@
 .statistics {
   margin: 40px auto;
   padding-top: 30px;
-  max-width: 399px;
+  max-width: 398px;
   border: 1px solid #dcdcdc;
   text-align: center;
 }
@@ -9,8 +9,6 @@
 .title {
   margin-bottom: 20px;
   text-transform: uppercase;
-  font-family: Roboto;
-  font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.33;
@@ -24,8 +22,13 @@
 }
 
 .item {
-  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 15px;
   width: 50px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.33;
 }
 
 .item:nth-child(1) {
@@ -46,4 +49,9 @@
 
 .item:nth-child(5) {
   background-color: #00ff00;
+}
+
+.percentage {
+  margin-top: 5px;
+  font-weight: 500;
 }

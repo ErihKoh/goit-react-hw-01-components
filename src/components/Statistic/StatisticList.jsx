@@ -8,7 +8,7 @@ function StatisticList({ stats }) {
         <li className={s.item} key={stat.id}>
           <span className="label">{stat.label}</span>
 
-          <span className="percentage">{stat.percentage}</span>
+          <span className={s.percentage}>{stat.percentage}%</span>
         </li>
       ))}
     </ul>

@@ -20,9 +20,7 @@
 }
 
 .description {
-  font-family: Roboto;
   font-weight: 500;
-  font-style: normal;
   color: #808080;
 }
 
@@ -45,16 +43,27 @@
   margin-top: 25px;
 
   border-top: 1px solid #808080;
-  background-color: #dcdcdc;
+  background-color: #e0ffff;
 }
 
 .statsItem {
   display: flex;
   flex-direction: column;
+  height: 50px;
   width: calc((100% - 3 * 30px) / 3);
   padding: 5px;
 }
 
 .statsItem:not(:last-child) {
   border-right: 1px solid #808080;
+}
+
+.label {
+  margin-bottom: 5px;
+  color: #5f9ea0;
+  font-weight: 300;
+  font-size: 15px;
+}
+.quantity {
+  color: #000000;
 }

@@ -5,9 +5,12 @@ function StatisticList({ stats }) {
   return (
     <ul className={s.statisticList}>
       {stats.map(stat => (
-        <li className={s.item} key={stat.id}>
+        <li
+          className={s.item}
+          style={{ backgroundColor: randomCollor() }}
+          key={stat.id}
+        >
           <span className="label">{stat.label}</span>
-
           <span className={s.percentage}>{stat.percentage}%</span>
         </li>
       ))}
@@ -24,5 +27,12 @@ StatisticList.protoType = {
     }),
   ),
 };
+
+function randomCollor() {
+  let r = Math.floor(Math.random() * 256);
+  let g = Math.floor(Math.random() * 256);
+  let b = Math.floor(Math.random() * 256);
+  return `rgb(${r}, ${g}, ${b})`;
+}
 
 export default StatisticList;
